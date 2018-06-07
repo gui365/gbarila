@@ -1,0 +1,78 @@
+/* ----------- CLASSES ----------- */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nav-option {
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+
+.nav-option p {
+    font-size: 0.8rem;
+    margin-top: 2px;
+    opacity: 0;
+}
+
+.text-format {
+    color: #FFF;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+
+/* ----------- ELEMENTS AND IDs ----------- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #F1ECE9;
+}
+
+main {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    margin-bottom: -5vh;
+}
+
+header {
+    height: 10vh;
+    background-color: #333A42;
+    justify-content: space-between !important;
+    padding: 0 3rem;
+    border-bottom: 3px solid #D7443F;
+    border-radius: 0 0 40px 0px;
+    box-shadow: 0 5px 20px rgb(151, 141, 136);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Quicksand", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 span {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer {
+    background-color: #485058;
+    height: 5vh;
+}
+
+
+/* ----------- ANIMATIONS ----------- */
+
+/* div {
+    border: 1px dashed yellow;
+} */
