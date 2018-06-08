@@ -11,8 +11,10 @@
 }
 
 .nav-option {
-    margin-left: 2rem;
-    margin-top: 10px;
+    /* margin-left: 2rem; */
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 .nav-option p {
@@ -24,6 +26,12 @@
 .text-format {
     color: #FFF;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.selected, .selected i {
+    background-color: rgb(238, 144, 141);
+    color: black;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
@@ -68,6 +76,26 @@ a {
 footer {
     background-color: #485058;
     height: 5vh;
+    font-size: 0.7rem;
+}
+
+#main-wrapper {
+    height: 100%;
+}
+
+#side-bar {
+    width: 5vw;
+    height: 100vh;
+    background-color: #D7443F;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 5px 8px 10px rgb(151, 141, 136);
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#content {
+    width: 95vw;
 }
 
 
