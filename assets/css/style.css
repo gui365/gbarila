@@ -1,106 +1,36 @@
-/* ----------- CLASSES ----------- */
-
+/* General classes and elemets */
 .flex {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.nav-option {
-    /* margin-left: 2rem; */
-    margin-top: 40px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-
-.nav-option p {
-    font-size: 0.8rem;
-    margin-top: 2px;
-    opacity: 0;
-}
-
-.text-format {
-    color: #FFF;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-.selected, .selected i {
-    background-color: rgb(238, 144, 141);
-    color: black;
-    border-radius: 15px 15px 15px 15px;
-}
-
-
-/* ----------- ELEMENTS AND IDs ----------- */
-
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: #F1ECE9;
-}
-
-main {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    min-height: 100%;
-    margin-bottom: -5vh;
-}
-
-header {
-    height: 10vh;
-    background-color: #333A42;
-    justify-content: space-between !important;
-    padding: 0 3rem;
-    border-bottom: 3px solid #D7443F;
-    border-radius: 0 0 40px 0px;
-    box-shadow: 0 5px 20px rgb(151, 141, 136);
 }
 
 h2 {
-    font-size: 2rem;
-    font-family: "Quicksand", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.75rem;
 }
 
-h2 span {
-    font-weight: 700;
-}
 
-a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-footer {
-    background-color: #485058;
-    height: 5vh;
-    font-size: 0.7rem;
-}
-
-#main-wrapper {
-    height: 100%;
-}
+/* Side bar options */
 
 #side-bar {
-    width: 5vw;
+    width: 20vw;
     height: 100vh;
-    background-color: #D7443F;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-shadow: 5px 8px 10px rgb(151, 141, 136);
-    align-items: flex-start;
-    justify-content: center;
+    display: fixed;
 }
 
-#content {
-    width: 95vw;
+.sb-option {
+padding: 0.8rem;
+}
+
+#sb-name {
+    background-color: black;
+    color: white;
 }
 
 
-/* ----------- ANIMATIONS ----------- */
+/* Main content */
 
-/* div {
-    border: 1px dashed yellow;
-} */
+#main-content {
+    width: 80vw;
+    padding: 1rem 2rem;
+}
+
+
