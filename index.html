@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Guillermo</title>
+    <link rel="icon" href="assets/images/gb-logo-tr.png" type="image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,700|Encode+Sans+Condensed:400,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Condensed:400,900" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/javascript/main.js"></script>
@@ -15,9 +17,14 @@
     <div id="wrapper" class="flex">
         <div id="side-bar">
             <div id="options">
-                <div id="sb-name" class="sb-option">
-                    <p id="my-name">Guillermo Barila</p>
-                    <p>Web Developer</p>
+                <div id="sb-header" class="flex">
+                    <div id="sb-logo">
+                        <img id="my-logo" src="assets/images/gb-logo-tr.png" alt="Guillermo's logo" style="width: 30px;">
+                    </div>
+                    <div id="sb-name" >
+                        <p id="my-name"><span style="font-weight: 900;">GUILLERMO</span>BARILA</p>
+                        <p style="text-align: right; font-size: 0.75rem;">Full Stack Web Developer</p>
+                    </div>
                 </div>
 
                 <a href="#about-me">
@@ -46,29 +53,61 @@
                 </a>
             </div>
             <div id="accounts">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-stack-overflow"></i>
-                <i class="fab fa-linkedin-in"></i>
+                <a href="https://github.com/gui365" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://stackoverflow.com/users/9636342/g-barila" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                <a href="https://www.linkedin.com/in/gbarila" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <div id="main-content">
             <section id="about-me">
-                <h2>Hi! My name is Guillermo</h2>
+                <div class="flex alignment-title-start">
+                    <div>
+                        <img class="img-section" src="assets/images/option-aboutme.png" alt="Guillermo's picture">
+                    </div>
+                    <div>
+                        <h6>ABOUT ME</h6>
+                        <h2>Hi! My name is Guillermo</h2>
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rhoncus ornare. Nam sed egestas erat. Morbi eget sagittis velit, non condimentum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur ex urna, ac ultricies tortor tempor sed. Nunc molestie gravida nulla, vitae condimentum ex porttitor ut. Sed vestibulum varius nibh, ut interdum tellus vehicula vitae. Nam eget eros at mauris tincidunt varius. Quisque facilisis et dui eget iaculis. Quisque vitae neque viverra ex fringilla pretium. Mauris laoreet mauris in lorem euismod, non consectetur sapien ornare. Vivamus facilisis felis nisl, sed elementum nunc tincidunt id. Etiam luctus et felis vitae pulvinar. Phasellus in dapibus lorem. Sed eu ex quis sem aliquet varius in at risus.</p>
                 <p>Aliquam molestie dolor ac lacus pulvinar rhoncus. Suspendisse vitae mauris eu nunc auctor ultricies. Donec non mi at urna lobortis finibus id eget massa. In non blandit enim. Praesent congue magna est, ut facilisis nisl consequat ut. Integer consectetur, turpis in posuere semper, tortor dolor interdum mi, vitae finibus augue ipsum nec justo. Praesent a metus vel erat dignissim varius. Phasellus metus dui, ornare quis sem eget, consectetur venenatis risus. In porta, dolor dictum pretium euismod, diam tellus semper metus, in tincidunt odio elit quis tortor. Vestibulum purus elit, vulputate id dolor et, egestas consectetur metus. Nulla scelerisque tempus enim, id pellentesque justo. Pellentesque in blandit tortor. Integer est eros, ornare sit amet pellentesque eu, cursus ut urna. Cras sit amet maximus neque. Duis condimentum urna scelerisque, bibendum felis ac, ullamcorper justo.</p>
             </section>
             <section id="portfolio">
-                <h2 style="text-align: right;">Some of my projects</h2>
+                <div class="flex alignment-title-end">
+                    <div>
+                        <h6>PORTFOLIO</h6>
+                        <h2>Some of my projects</h2>
+                    </div>
+                    <div>
+                        <img class="img-section" src="assets/images/option-portfolio.png" alt="Portfolio picture">
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rhoncus ornare. Nam sed egestas erat. Morbi eget sagittis velit, non condimentum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur ex urna, ac ultricies tortor tempor sed. Nunc molestie gravida nulla, vitae condimentum ex porttitor ut. Sed vestibulum varius nibh, ut interdum tellus vehicula vitae. Nam eget eros at mauris tincidunt varius. Quisque facilisis et dui eget iaculis. Quisque vitae neque viverra ex fringilla pretium. Mauris laoreet mauris in lorem euismod, non consectetur sapien ornare. Vivamus facilisis felis nisl, sed elementum nunc tincidunt id. Etiam luctus et felis vitae pulvinar. Phasellus in dapibus lorem. Sed eu ex quis sem aliquet varius in at risus.</p>
                 <p>Aliquam molestie dolor ac lacus pulvinar rhoncus. Suspendisse vitae mauris eu nunc auctor ultricies. Donec non mi at urna lobortis finibus id eget massa. In non blandit enim. Praesent congue magna est, ut facilisis nisl consequat ut. Integer consectetur, turpis in posuere semper, tortor dolor interdum mi, vitae finibus augue ipsum nec justo. Praesent a metus vel erat dignissim varius. Phasellus metus dui, ornare quis sem eget, consectetur venenatis risus. In porta, dolor dictum pretium euismod, diam tellus semper metus, in tincidunt odio elit quis tortor. Vestibulum purus elit, vulputate id dolor et, egestas consectetur metus. Nulla scelerisque tempus enim, id pellentesque justo. Pellentesque in blandit tortor. Integer est eros, ornare sit amet pellentesque eu, cursus ut urna. Cras sit amet maximus neque. Duis condimentum urna scelerisque, bibendum felis ac, ullamcorper justo.</p>
             </section>
             <section id="skills">
-                <h2>This is what I know</h2>
+                <div class="flex alignment-title-start">
+                    <div>
+                        <img class="img-section" src="assets/images/option-skills.png" alt="Guillermo's skills">
+                    </div>
+                    <div>
+                        <h6>SKILLS</h6>
+                        <h2>This is what I know</h2>
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rhoncus ornare. Nam sed egestas erat. Morbi eget sagittis velit, non condimentum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur ex urna, ac ultricies tortor tempor sed. Nunc molestie gravida nulla, vitae condimentum ex porttitor ut. Sed vestibulum varius nibh, ut interdum tellus vehicula vitae. Nam eget eros at mauris tincidunt varius. Quisque facilisis et dui eget iaculis. Quisque vitae neque viverra ex fringilla pretium. Mauris laoreet mauris in lorem euismod, non consectetur sapien ornare. Vivamus facilisis felis nisl, sed elementum nunc tincidunt id. Etiam luctus et felis vitae pulvinar. Phasellus in dapibus lorem. Sed eu ex quis sem aliquet varius in at risus.</p>
                 <p>Aliquam molestie dolor ac lacus pulvinar rhoncus. Suspendisse vitae mauris eu nunc auctor ultricies. Donec non mi at urna lobortis finibus id eget massa. In non blandit enim. Praesent congue magna est, ut facilisis nisl consequat ut. Integer consectetur, turpis in posuere semper, tortor dolor interdum mi, vitae finibus augue ipsum nec justo. Praesent a metus vel erat dignissim varius. Phasellus metus dui, ornare quis sem eget, consectetur venenatis risus. In porta, dolor dictum pretium euismod, diam tellus semper metus, in tincidunt odio elit quis tortor. Vestibulum purus elit, vulputate id dolor et, egestas consectetur metus. Nulla scelerisque tempus enim, id pellentesque justo. Pellentesque in blandit tortor. Integer est eros, ornare sit amet pellentesque eu, cursus ut urna. Cras sit amet maximus neque. Duis condimentum urna scelerisque, bibendum felis ac, ullamcorper justo.</p>
             </section>
             <section id="contact">
-                <h2>Let's talk</h2>
+                <div class="flex alignment-title-end">
+                    <div>
+                        <h6>CONTACT</h6>
+                        <h2>Let's talk</h2>
+                    </div>
+                    <div>
+                        <img class="img-section" src="assets/images/option-contact.png" alt="Contact me">
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rhoncus ornare. Nam sed egestas erat. Morbi eget sagittis velit, non condimentum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur ex urna, ac ultricies tortor tempor sed. Nunc molestie gravida nulla, vitae condimentum ex porttitor ut. Sed vestibulum varius nibh, ut interdum tellus vehicula vitae. Nam eget eros at mauris tincidunt varius. Quisque facilisis et dui eget iaculis. Quisque vitae neque viverra ex fringilla pretium. Mauris laoreet mauris in lorem euismod, non consectetur sapien ornare. Vivamus facilisis felis nisl, sed elementum nunc tincidunt id. Etiam luctus et felis vitae pulvinar. Phasellus in dapibus lorem. Sed eu ex quis sem aliquet varius in at risus.</p>
                 <p>Aliquam molestie dolor ac lacus pulvinar rhoncus. Suspendisse vitae mauris eu nunc auctor ultricies. Donec non mi at urna lobortis finibus id eget massa. In non blandit enim. Praesent congue magna est, ut facilisis nisl consequat ut. Integer consectetur, turpis in posuere semper, tortor dolor interdum mi, vitae finibus augue ipsum nec justo. Praesent a metus vel erat dignissim varius. Phasellus metus dui, ornare quis sem eget, consectetur venenatis risus. In porta, dolor dictum pretium euismod, diam tellus semper metus, in tincidunt odio elit quis tortor. Vestibulum purus elit, vulputate id dolor et, egestas consectetur metus. Nulla scelerisque tempus enim, id pellentesque justo. Pellentesque in blandit tortor. Integer est eros, ornare sit amet pellentesque eu, cursus ut urna. Cras sit amet maximus neque. Duis condimentum urna scelerisque, bibendum felis ac, ullamcorper justo.</p>
             </section>
@@ -78,5 +117,7 @@
             </footer>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
 </html>
