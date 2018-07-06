@@ -1,154 +1,229 @@
 /* General classes and elemets */
-body {
-    font-family: 'Encode Sans', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.3px;
+*, body {
+  font-family: 'Encode Sans', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.3px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
+}
+
+.alignment-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .alignment-title-start {
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .alignment-title-end {
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 2rem;
-    /* text-align: center; */
+  font-size: 2rem;
+  /* text-align: center; */
 }
 
 h6 {
-    font-size: 0.8rem;
-    font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    margin-bottom: -12px;
+  font-size: 0.8rem;
+  font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  margin-bottom: -12px;
 }
 
 section {
-    padding: 5rem 4rem;
+  padding: 5rem 4rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Side bar */
 
 #side-bar {
-    width: 25vw;
-    height: 100vh;
-    position: fixed;
-    border-right: 1px solid rgb(194, 225, 235);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    /* overflow-y: scroll; */
+  width: 25vw;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid rgb(194, 225, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(23, 153, 192);
+  /* overflow-y: scroll; */
 }
 
 .sb-option {
-    padding: 0.6rem 1.5rem;
-    border-bottom: 1px solid rgb(194, 225, 235);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    background-color: white;
+  padding: 0.6rem 1.5rem;
+  border-bottom: 1px solid rgb(194, 225, 235);
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background-color: rgb(101, 204, 235);
 }
 
 .sb-option div {
-    /* background-color: rgb(254, 255, 225); */
-    /* border: 1px rgb(12, 81, 102) solid; */
-    box-shadow:  2px 0 2px rgb(216, 216, 216);
-    border-radius: 50%;
-    padding: 0.5rem;
+  /* border: 1px rgb(12, 81, 102) solid; */
+  box-shadow:  2px 0 2px rgb(216, 216, 216);
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: white;
 }
 
 .sb-option img {
-    width: 30px;
+  width: 30px;
 }
 
 #sb-header{
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(23, 153, 192);
-    padding: 2rem 0.7rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0.7rem;
+}
+
+#my-logo {
+  width: 50px;
 }
 
 #sb-logo {
-    padding: 8px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid rgb(77, 206, 245);
-    box-shadow: 0 2px 3px rgb(12, 81, 102);
+  padding: 8px;
+  border-radius: 5% 50% 20% 50%;
+  background: linear-gradient(to bottom right, rgb(197, 197, 197), white, rgb(0, 0, 0));
+  /* border: 1px solid rgb(138, 179, 226); */
+  box-shadow: 3px 5px 3px rgb(29, 119, 146);
 }
 
 #sb-name {
-    color: white;
-    flex-direction: column;
+  color: white;
+  flex-direction: column;
 }
 
 #my-name {
-    font-size: 1.6rem;
-    font-family: "Encode Sans Condensed", Arial, Helvetica, sans-serif;
-    margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-family: "Encode Sans Condensed", Arial, Helvetica, sans-serif;
+  margin-bottom: 0.4rem;
 }
 
 #accounts {
-    padding: 0 1rem;
-    text-align: center;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 #accounts i {
-    font-size: 1.5rem;
-    margin: 1rem 0.6rem 2rem 0.6rem;
-    color: rgb(219, 219, 219);
+  font-size: 1.5rem;
+  margin: 1rem 0.6rem 2rem 0.6rem;
+  color: rgb(76, 194, 230);
 }
 
 
 /* Main content */
 
 #main-content {
-    width: 75vw;
-    margin-left: 25vw;
-    line-height: 2;
-    background-color: rgb(248, 253, 255);
+  width: 75vw;
+  margin-left: 25vw;
+  line-height: 2.2;
+  /* background-color: rgb(248, 253, 255); */
+  background-color: white;
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(36, 99, 151);
+  background-color: rgb(11, 104, 133);
 }
 
 section:nth-of-type(even) {
-    background-color: rgb(234, 250, 255);
+  background-color: rgb(234, 250, 255);
 }
 
 .img-section {
-    width: 150px;
-    border-radius: 50%;
-    /* border: 1px solid black; */
-    margin: 0 2rem;
-    background-color: white;
-    box-shadow: 0 5px 5px rgb(57, 78, 95);
+  width: 150px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  margin: 0 2rem;
+  background-color: white;
+  box-shadow: 0 5px 5px rgb(57, 78, 95);
+}
+
+form {
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: rgb(176, 228, 243);
+  border-radius: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+::placeholder {
+  color: rgb(141, 192, 206);
+  opacity: 1;
+  font-size: 0.8rem;
+}
+
+:-ms-input-placeholder {
+  color: rgb(141, 192, 206);
+  font-size: 0.7rem;
+}
+
+::-ms-input-placeholder {
+  color: rgb(141, 192, 206);
+  font-size: 0.8rem;
+}
+
+input, textarea {
+  background-color: white;
+  border-top: 2px solid rgb(23, 153, 192);
+  border-left: 2px solid rgb(23, 153, 192);
+  border-bottom: 1px solid rgb(185, 232, 247);
+  border-right: 1px solid rgb(185, 232, 247);
+  border-style: inset;
+  border-radius: 5px;
+  height: 25px;
+  width: 80%;
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  padding: 0.5rem;
+}
+
+#send-button {
+  background-color: rgb(253, 209, 14);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  border: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 2px 3px 3px black;
 }
 
 footer {
-    height: 50px;
-    font-size: 0.6rem;
-    padding: 0.5rem 2rem;
-    background-color: rgb(23, 153, 192);
-    color: white;
+  height: 50px;
+  font-size: 0.6rem;
+  padding: 0.5rem 2rem;
+  background-color: rgb(23, 153, 192);
+  color: white;
+}
+
+
+/* ----------------- MEDIA QUERIES ----------------- */
+
+
+/* ----------------- PSEUDOCLASSES ----------------- */
+#accounts i:hover {
+  color: rgb(13, 71, 88);
+}
+
+.sb-option:hover {
+  background-color: white;
 }
