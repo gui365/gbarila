@@ -24,9 +24,11 @@ $("a").on('click', function(event) {
 
 // Hovering over form button
 $("button").hover(function(){
-  $(this).animate({ "border-radius": "20px" }, "fast")
+  $(this).toggleClass("without-shadow");
+  $(this).toggleClass("with-shadow");
 }, function(){
-  $(this).animate({ "border-radius": "0" })
+  $(this).toggleClass("without-shadow");
+  $(this).toggleClass("with-shadow");
 })
 
 
