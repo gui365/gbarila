@@ -16,7 +16,7 @@ $("a").on('click', function(event) {
 
 // Hovering over form button
 $("button").hover(function(){
-  $(this).animate({ "border-radius": "20px", "box-shadow": "2px 3px 3px black" }, "fast")
+  $(this).animate({ "border-radius": "20px" }, "fast")
 }, function(){
   $(this).animate({ "border-radius": "0" })
 })

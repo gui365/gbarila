@@ -37,6 +37,10 @@ b {
   margin-bottom: 1.5rem;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 h2 {
   font-size: 2rem;
   /* text-align: center; */
@@ -47,12 +51,17 @@ h6 {
   font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
   font-weight: 900;
   margin-bottom: -12px;
-  border-bottom: 2px solid rgb(81, 142, 223);
+  border-bottom: 1px solid rgb(81, 142, 223);
   border-image: linear-gradient(to right, rgb(116, 11, 202), rgb(81, 142, 223), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 100;
 }
 
 section {
-  padding: 4rem 4rem;
+  padding: 3.5rem 4rem 5rem 4rem;
+  /* -moz-box-shadow: 0 -3px 30px rgba(81, 142, 223, 0.3);
+  -webkit-box-shadow: 0 -3px 30px rgba(81, 142, 223, 0.3);
+  box-shadow: 0 -3px 30px rgba(81, 142, 223, 0.3); */
+  border-bottom: 2px solid rgb(81, 142, 223);
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 100;
 }
 
 a {
@@ -174,22 +183,29 @@ a {
   background-color: rgb(81, 142, 223);
 }
 
+.title-section {
+  width: 100%;
+}
+
 section:nth-of-type(even) {
-  background-color: rgb(246, 250, 255);
+  background-color: rgb(208, 215, 255);
+}
+
+.title-section:nth-of-type(odd) {
+  text-align: right;
 }
 
 section:nth-of-type(even) h6 {
-  border-image: linear-gradient(to left, rgb(116, 11, 202), rgb(81, 142, 223), rgba(246, 250, 255, 1), rgba(246, 250, 255, 0)) 100;
-  text-align: right;
+  border-image: linear-gradient(to left, rgb(116, 11, 202), rgb(81, 142, 223), rgba(246, 250, 255, 0)) 100;
 }
 
 .img-section {
   width: 180px;
   border-radius: 50%;
-  border: 10px solid rgb(70, 120, 185);
+  border: 12px solid #5A2D7F;
   margin: 0 2rem;
   background-color: white;
-  box-shadow: 0 5px 5px rgba(57, 78, 95, 0.8);
+  box-shadow: 0 5px 5px rgba(57, 78, 95, 0.3);
 }
 
 #pronunciation {
@@ -202,8 +218,7 @@ section:nth-of-type(even) h6 {
   margin: 1rem;
   flex-direction: column;
   font-size: 0.8rem;
-  line-height: 1;
-  text-align: justify;
+  line-height: 1.2;
 }
 
 .portfolio-project-links {
@@ -230,6 +245,14 @@ section:nth-of-type(even) h6 {
   border: 10px solid black;
   border-radius: 25px 0 25px 0;
   margin-bottom: 0.5rem;
+}
+
+.skill-group {
+  width: 50%;
+}
+
+.skill-tech-bar {
+  width: 90%;
 }
 
 form {
@@ -270,11 +293,12 @@ textarea {
 
 #send-button {
   background-color: rgb(255, 239, 19);
+  /* border-radius: 15px 0 15px 0; */
   color: black;
   font-weight: 700;
   border: none;
   padding: 0.5rem 3rem;
-  box-shadow: 2px 3px 3px black;
+  box-shadow: 2px 3px 3px rgba(61, 61, 61, 0.6);
   margin-top: 1rem;
 }
 
