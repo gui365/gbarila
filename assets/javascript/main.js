@@ -1,12 +1,5 @@
 // ANIMATIONS
 
-$("#sb-skills").click(function(){
-	$('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width: $(this).attr('data-percent')
-		}, 5000);
-	});
-});
 
 // Smooth scroll animation
 $("a").on('click', function(event) {
@@ -39,13 +32,13 @@ $(".portfolio-project").hover(function(){
 })
 
 function scrollListener() {
-  if (document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750) {
-    $('.skillbar').each(function(){
-      $(this).find('.skillbar-bar').animate({
-        width: $(this).attr('data-percent')
-      }, 5000);
+    if (document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750) {
+      $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').animate({
+          width: $(this).attr('data-percent')
+        }, 2000);
     });
-  }
+  };
 };
 
 window.onscroll = function() {

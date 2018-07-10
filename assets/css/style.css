@@ -2,10 +2,24 @@
 *, body {
   font-family: 'Encode Sans', Arial, Helvetica, sans-serif;
   letter-spacing: 0.3px;
+  margin: 0;
+  /* width: 100%; */
+}
+
+header {
+  display: none;
 }
 
 b {
   font-weight: 700;
+}
+
+.alignment-around {
+  justify-content: space-around;
+}
+
+.alignment-between {
+  justify-content: space-between;
 }
 
 .with-shadow {
@@ -68,10 +82,7 @@ h6 {
 
 section {
   padding: 3.5rem 4rem 5rem 4rem;
-  /* -moz-box-shadow: 0 -3px 30px rgba(81, 142, 223, 0.3);
-  -webkit-box-shadow: 0 -3px 30px rgba(81, 142, 223, 0.3);
-  box-shadow: 0 -3px 30px rgba(81, 142, 223, 0.3); */
-  border-bottom: 2px solid rgb(81, 142, 223);
+  border-top: 2px solid rgb(81, 142, 223);
   border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 100;
 }
 
@@ -80,7 +91,6 @@ a {
 }
 
 /* Side bar */
-
 #side-bar {
   width: 25vw;
   height: 100vh;
@@ -102,21 +112,12 @@ a {
   background-color: white;
 }
 
-/* .sb-option div {
-  border: 1px rgb(12, 81, 102) solid;
-  box-shadow:  2px 0 2px rgb(216, 216, 216);
-  border-radius: 50%;
-  padding: 0.5rem;
-  background-color: white;
-} */
-
 .sb-option img {
   width: 30px;
 }
 
 #sb-header{
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   padding: 2.5rem 0.7rem;
   background: linear-gradient(to bottom, rgb(116, 11, 202), rgb(81, 142, 223));
@@ -124,7 +125,7 @@ a {
 }
 
 #my-logo {
-  width: 50px;
+  width: 40px;
 }
 
 #sb-logo {
@@ -143,6 +144,11 @@ a {
   /* background-color: rgba(0, 0, 0, 0.7); */
   /* padding: 0.1rem 0.4rem 0.3rem 0.4rem; */
   /* border-radius: 15px 0 10px 0; */
+}
+
+#my-title {
+  text-align: right;
+  font-size: 0.75rem;
 }
 
 #my-name {
@@ -258,33 +264,12 @@ section:nth-of-type(even) h6 {
   margin-bottom: 0.5rem;
 }
 
-/* .skill {
-  width: 100%;
-  position: relative;
-}
-
-.skill-name {
-  width: 10%;
-  background-color: rgb(0, 0, 0);
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  border-radius: 22px 0 0 0;
-}
-
-.skill-bar {
-  width: 90%;
-  background-color: rgb(218, 22, 22);
-  position: absolute;
-} */
-
 .skillbar {
 	position: relative;
 	display: block;
 	margin-bottom: 1.2rem;
 	width: 100%;
-	background: rgb(206, 206, 206);
+	background: #cecece;
 	height: 30px;
 	border-radius: 15px 0 15px 0;
 }
@@ -297,14 +282,15 @@ section:nth-of-type(even) h6 {
 	font-weight: 700;
 	font-size: 0.9rem;
 	color: white;
-  border-radius: 0 0 15px 0;
-  background-color: black;
+  border-radius: 15px 0 15px 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
 .skillbar-title span {
 	display: block;
 	padding: 0 0.5rem;
-	height: 30px;
+  height: 30px;
+  /* font-size: 1vw; */
 }
 
 .skillbar-bar {
@@ -383,6 +369,214 @@ footer {
 
 
 /* ----------------- MEDIA QUERIES ----------------- */
+/* Repsonsive design header */
+
+@media screen and (max-width: 1279px) {
+  #sb-header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #sb-logo {
+    margin-bottom: 0.7rem;
+  }
+
+  #my-name, #my-title {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  header {
+     display: flex;
+     background: linear-gradient(to right bottom, rgba(116, 11, 202, 0.95), rgba(81, 142, 223, 0.95));
+     padding: 0.75rem;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 20;
+     height: 3rem;
+     width: 97.5%;
+  }
+
+  #header-options p {
+    font-size: 0.5rem;
+    margin-top: 0.2rem;
+    color: white;
+  }
+
+  .resp-option {
+    border-radius: 50%;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    padding: 0 0.3rem;
+  }
+ 
+  #header-name, #header-options {
+    width: 50%;
+  }
+
+  #contact-me {
+    display: none;
+  }
+
+  #side-bar {
+  display: none;
+  }
+
+  #sb-logo {
+    margin: 0 0.7rem 0 0;
+  }
+
+  #main-content {
+    width: 100vw;
+    margin: 0;
+  }
+
+  section {
+    padding-top: 7rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .resp-option img {
+    width: 35px;
+  }
+
+  .resp-option {
+    margin: 0 0.5rem;
+  }
+
+  #header-options {
+    justify-content: flex-end;
+  }
+
+    h2 {
+    font-size: 2rem;
+  }
+
+  .img-section {
+    width: 150px;
+    border: 7px solid rgb(0, 0, 0);
+    margin: 0 1rem;
+  }
+
+  .portfolio-project {
+    width: 65%;
+    flex-direction: column;
+  }
+  
+  #main-content p {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.6rem !important;
+  }
+
+  .portfolio-project img {
+    border: 5px solid black;
+  }
+
+  .portfolio-project p {
+    font-size: 0.8rem !important;
+    line-height: 1.2;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  #sb-logo {
+    display: none;
+  }
+  
+  .resp-option {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  .resp-option img {
+    width: 30px;
+  }
+
+  #header-options p {
+    display: none;
+  }
+
+  .portfolio-project {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 6rem 1.5rem;
+    width: 100%;
+  }
+
+  header {
+    width: 95%;
+  }
+  
+  .resp-option {
+    padding: 0.3rem;
+    margin: 0 0.2rem;
+  }
+
+  #header-options {
+    align-items: center;
+  }
+
+  #header-name {
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+
+  #my-name {
+    font-size: 1.2rem;
+  }
+
+  #my-position {
+    font-size: 0.7rem !important;
+  }
+
+  .img-section {
+    width: 120px;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 0 1rem 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  section {
+    width: 107vw;  
+  }
+
+  .resp-option {
+    margin: 0.3rem;
+    padding: 0;
+    background: none;
+  }
+  
+  .resp-option img {
+    width: 25px;
+  }
+}
 
 
 /* ----------------- PSEUDOCLASSES ----------------- */

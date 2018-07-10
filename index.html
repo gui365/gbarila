@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" id="top-page">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +14,40 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Responsive design header -->
+  <header class="alignment-between">
+    <!-- Logo and Name -->
+    <div id="header-name" class="flex">
+      <div id="sb-logo" class="flex alignment-center">
+        <img id="my-logo" src="assets/images/gb-logo-tr.png" alt="Guillermo's logo">
+      </div>
+
+      <div id="sb-name" >
+        <p id="my-name"><span style="font-weight: 900;">GUILLERMO</span>BARILA</p>
+        <p id="my-position" style="text-align: right; font-size: 0.75rem;">Full Stack Developer</p>
+      </div>
+    </div>
+
+    <!-- Options -->
+    <div id="header-options" class="flex alignment-around">
+        <a href="#about-me"><div id="hd-about-me" class="resp-option flex wrap alignment-center" style="flex-direction: column;"><img src="assets/images/op-about.png" alt="person icon"><p>ABOUT ME</p></div></a>
+        <a href="#portfolio"><div id="hd-portfolio" class="resp-option flex wrap alignment-center" style="flex-direction: column;"><img src="assets/images/op-port.png" alt="briefcase icon"><p>PORTFOLIO</p></div></a>
+        <a href="#skills"><div id="hd-skills" class="resp-option flex wrap alignment-center" style="flex-direction: column;"><img src="assets/images/op-skills.png" alt="bar graph icon"><p>SKILLS</p></div></a>
+        <a href="#contact"><div id="hd-contact" class="resp-option flex wrap alignment-center" style="flex-direction: column;"><img src="assets/images/op-contact.png" alt="chat bubbles icon"><p>CONTACT</p></div></a>
+    </div>
+  </header>
+
+  <!-- Side bar for wide viewports -->
   <div id="wrapper" class="flex">
     <div id="side-bar" class="fixed">
       <div id="options">
-        <div id="sb-header" class="flex">
+        <div id="sb-header" class="flex alignment-around">
           <div id="sb-logo">
             <img id="my-logo" src="assets/images/gb-logo-tr.png" alt="Guillermo's logo">
           </div>
           <div id="sb-name" >
             <p id="my-name"><span style="font-weight: 900;">GUILLERMO</span>BARILA</p>
-            <p style="text-align: right; font-size: 0.75rem;">Full Stack Developer</p>
+            <p id="my-title">Full Stack Developer</p>
           </div>
         </div>
 
@@ -140,10 +164,10 @@
           </div>
           <div class="title-section">
             <h6>SKILLS</h6>
-            <h2>What I currently know</h2>
+            <h2>Some of the technologies I use</h2>
           </div>
         </div>
-        <p>I am constantly learning and honing my skill set.</p>
+        <p>I am constantly learning and honing my skill set. I feel very comfortable working on the front-end, and currently diving into the world of back-end development.</p>
 
         <div style="margin-top: 2rem;">
           <div class="skillbar" data-percent="80%">
@@ -180,6 +204,12 @@
             <div class="skillbar-title"><span>Firebase</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">4</div>
+          </div>
+          
+          <div class="skillbar" data-percent="10%">
+            <div class="skillbar-title"><span>NodeJS</span></div>
+            <div class="skillbar-bar"></div>
+            <!-- <div class="skill-bar-percent">1</div> -->
           </div>
 
           <div class="skillbar" data-percent="90%">
@@ -227,7 +257,7 @@
 
       <!-- Footer -->
       <footer>
-          <p>Copyright &copy; 2018</p>
+          <p>Copyright &copy; Guillermo Barila 2018</p>
           <p>Icons from <a style="color: white; text-decoration: underline dotted;" href="https://icons8.com/" target="_blank">Icons8</a>
       </footer>
     </div>
