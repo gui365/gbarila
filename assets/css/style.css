@@ -264,6 +264,13 @@ section:nth-of-type(even) h6 {
   margin-bottom: 0.5rem;
 }
 
+.quote {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  font-style: italic;
+  border-left: 5px solid rgb(81, 142, 223);
+}
+
 .skillbar {
 	position: relative;
 	display: block;
@@ -513,7 +520,7 @@ footer {
 @media screen and (max-width: 480px) {
   section {
     padding: 6rem 1.5rem;
-    width: 100%;
+    width: 103.5vw;
   }
 
   header {
@@ -564,7 +571,7 @@ footer {
   }
 
   section {
-    width: 107vw;  
+    width: 110vw;  
   }
 
   .resp-option {
@@ -576,8 +583,15 @@ footer {
   .resp-option img {
     width: 25px;
   }
+
 }
 
+@media screen and (max-width: 251px) {
+  section {
+    background-color: white !important;
+  }
+
+}
 
 /* ----------------- PSEUDOCLASSES ----------------- */
 #accounts i:hover {

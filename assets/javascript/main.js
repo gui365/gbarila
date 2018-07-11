@@ -31,16 +31,16 @@ $(".portfolio-project").hover(function(){
   $(this).find(".portfolio-project-links").css( {display: "none"} )
 })
 
-function scrollListener() {
-    if (document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750) {
-      $('.skillbar').each(function(){
-        $(this).find('.skillbar-bar').animate({
-          width: $(this).attr('data-percent')
-        }, 2000);
-    });
-  };
-};
+
 
 window.onscroll = function() {
-  scrollListener();
+  if ((document.body.scrollTop > 1750 && $('.skillbar').find('.skillbar-bar').css("width") == "0px") || (document.documentElement.scrollTop > 1750 && $('.skillbar').find('.skillbar-bar').css("width") == "0px")) {
+    $('.skillbar').each(function(){
+      $(this).find('.skillbar-bar').animate({
+        width: $(this).attr('data-percent')
+      }, 2000);
+    });
+  } else if ($('.skillbar').first().css("width") != "0px") {
+    return;
+  }
 };
