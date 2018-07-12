@@ -44,3 +44,10 @@ window.onscroll = function() {
     return;
   }
 };
+
+function copyToClipboard() {
+  
+  $("#my-email").val($("#email-address").text()).select();
+  document.execCommand("copy");
+
+}
