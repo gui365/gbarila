@@ -10,10 +10,6 @@ header {
   display: none;
 }
 
-b {
-  font-weight: 700;
-}
-
 .alignment-around {
   justify-content: space-around;
 }
