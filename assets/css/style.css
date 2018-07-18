@@ -234,6 +234,18 @@ section:nth-of-type(even) h6 {
   line-height: 1.2;
 }
 
+.portfolio-project-message {
+  position: absolute;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  bottom: 100px;
+  left: auto;
+  right: auto;
+  border-radius: 15px 0 15px 0;
+}
+
 .portfolio-project-links {
   position: absolute;
   text-align: center;
