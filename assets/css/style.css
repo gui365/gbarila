@@ -67,6 +67,11 @@ h2 {
   /* text-align: center; */
 }
 
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 h6 {
   font-size: 0.8rem;
   font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;

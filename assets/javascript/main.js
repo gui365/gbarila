@@ -33,17 +33,17 @@ $(".portfolio-project").hover(function(){
 
 
 
-window.onscroll = function() {
-  if ((document.body.scrollTop > 1750 && $('.skillbar').find('.skillbar-bar').css("width") == "0px") || (document.documentElement.scrollTop > 1750 && $('.skillbar').find('.skillbar-bar').css("width") == "0px")) {
-    $('.skillbar').each(function(){
-      $(this).find('.skillbar-bar').animate({
-        width: $(this).attr('data-percent')
-      }, 2000);
-    });
-  } else if ($('.skillbar').first().css("width") != "0px") {
-    return;
-  }
-};
+// window.onscroll = function() {
+//   if ((document.body.scrollTop > 1750 && $('.skillbar').find('.skillbar-bar').css("width") == "0px") || (document.documentElement.scrollTop > 1750 && $('.skillbar').find('.skillbar-bar').css("width") == "0px")) {
+//     $('.skillbar').each(function(){
+//       $(this).find('.skillbar-bar').animate({
+//         width: $(this).attr('data-percent')
+//       }, 2000);
+//     });
+//   } else if ($('.skillbar').first().css("width") != "0px") {
+//     return;
+//   }
+// };
 
 function copyToClipboard() {
   
